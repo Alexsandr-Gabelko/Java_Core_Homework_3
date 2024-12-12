@@ -15,7 +15,7 @@ public class Task_1 {
         resultMap.put(1, "Первая дата раньше второй");
         Random random = new Random();
         Employee employee1 = new Employee("Bill",2024,10, random.nextInt(1, 31));
-        Employee employee2 = new Employee("Dijon",2024,10,random.nextInt(1, 31));
+        Employee employee2 = new Employee("John",2024,10,random.nextInt(1, 31));
         result = Employee.compareDates(employee1.getYear(), employee1.getMonth(), employee1.getDay(),
             employee2.getYear(), employee2.getMonth(), employee2.getDay());
         System.out.println("Результат сравнения дат: ");

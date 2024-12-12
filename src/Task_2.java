@@ -11,8 +11,23 @@ public class Task_2 {
         Employee employee1 = new Employee("Bill",30000);
         Employee employee2 = new Employee("John",20000);
         Employee employee3 = new Employee("Smith",20000);
-        Employee manager = new Employee("Boss", 90000);
-        Employee[] employee = {employee1, employee2, employee3, manager};
-        Employee.raiseSalary(employee, percent);
+        Manager manager = new Manager("Boss", 90000);
+        Employee[] employees = {employee1, employee2, employee3, manager};
+
+        // Выводим зарплаты до повышения
+        System.out.println("До повышения зарплат:");
+        for (Employee e : employees) {
+            System.out.println(e);
+        }
+
+        // Повышаем зарплаты
+        Manager.raiseSalary(employees, percent);
+
+        // Выводим зарплаты после повышения
+        System.out.println("\nПосле повышения зарплат:\n");
+        for (Employee e : employees) {
+            System.out.println(e);
+        }
     }
+
 }

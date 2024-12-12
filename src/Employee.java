@@ -38,6 +38,18 @@ public class Employee {
         return salary;
     }
 
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
+
     public static int compareDates(int year1, int month1, int day1, int year2, int month2, int day2) {
         // Преобразуем даты в числовые значения
         int date1 = year1 * 10000 + month1 * 100 + day1;
@@ -45,11 +57,5 @@ public class Employee {
         return Integer.compare(date1, date2);
     }
 
-    public static Employee[] raiseSalary(Employee[] employee, int percent){
-        for (Employee i : employee){
-            i.salary = i.salary * percent;
-        }
 
-        return employee;
-    }
 }
