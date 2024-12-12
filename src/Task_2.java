@@ -24,7 +24,7 @@ public class Task_2 {
         Manager.raiseSalary(employees, percent);
 
         // Выводим зарплаты после повышения
-        System.out.println("\nПосле повышения зарплат:\n");
+        System.out.println("\nПосле повышения зарплат:");
         for (Employee e : employees) {
             System.out.println(e);
         }

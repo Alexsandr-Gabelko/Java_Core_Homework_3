@@ -23,6 +23,6 @@ public class Task_1 {
             employee1.getDay());
         System.out.println("Вторая дата: " + employee2.getYear() + "-" + employee2.getMonth() + "-" +
             employee2.getDay());
-        System.out.printf(resultMap.get(result) + "\n\n");
+        System.out.printf(resultMap.get(result) + "\n");
     }
 }

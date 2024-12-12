@@ -6,7 +6,7 @@ public class Menu {
         Scanner scanner = new Scanner(System.in);
         int number;
         while (true) {
-            System.out.println("Выберети задание ");
+            System.out.println("\nВыберети задание ");
             System.out.println("1 - задание №_1");
             System.out.println("2 - задание №_2");
             System.out.println("0 - Выход");
